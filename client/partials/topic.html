@@ -1,0 +1,63 @@
+<div>
+    <div class="row">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+            <a ng-href = '#/dashboard'>cancel</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3><span ng-bind = "user"></span> please put the questions and options here:</h3>
+        </div>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-md-7">
+                Question: <input type="text" ng-model = 'input.question' class="form-control">
+            </div>
+            <div class="col-md-5">
+                <br>
+                <span ng-bind = "error.question" class="error"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Option1: <input type="text" ng-model = "input.option1" class="form-control">
+            </div>
+            <div class="col-md-5">
+                <br>
+                <span ng-bind = "error.option1" class="error"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Option2: <input type="text" ng-model = "input.option2" class="form-control">
+            </div>
+            <div class="col-md-5">
+                <br>
+                <span ng-bind = "error.option2" class="error"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Option3: <input type="text" ng-model = "input.option3" class="form-control">
+            </div>
+            <div class="col-md-5">
+                <br>
+                <span ng-bind = "error.option3" class="error"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                Option4: <input type="text" ng-model = "input.option4" class="form-control">
+            </div>
+            <div class="col-md-5">
+                <br>
+                <span ng-bind = "error.option4" class="error"></span>
+            </div>
+        </div>
+
+        <input type="submit" value = 'Create Poll' ng-click = "createPoll()">
+    </form>
+</div>

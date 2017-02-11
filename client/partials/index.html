@@ -1,0 +1,29 @@
+<div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+        <span ng-bind = "success"></span>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <form>
+                <div class="row">
+                    <p>
+                        Hello!
+                    </p>
+                    <p>
+                        Please enter your name below to join our great world of Polling!
+                    </p>
+                    <br>
+                    <span ng-bind = "error.name"></span>
+                    <input type="text" placeholder="Enter your name" ng-model = 'input.name' class="form-control">
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value = 'Enter' ng-click = "addUser()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
