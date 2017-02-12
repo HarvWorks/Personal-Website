@@ -9,7 +9,8 @@ body{
 .container-fluid{
     padding-left: 0;
 }
-/*#my-navbar-header a{
-    color: #777;
-    text-decoration: none;
-}*/
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+cursor: pointer;
+}

@@ -26,29 +26,12 @@
         <script src='angular/angular.js'></script>
         <script src = 'angular-route/angular-route.js'></script>
         <script type="text/javascript" src="./js/routes.js"></script>
-        <script type="text/javascript" src="./js/factory.js"></script>
         <script type="text/javascript" src="./js/controller.js"></script>
         <link rel="stylesheet" href="./css/style.css">
 
         <title>HarvWorks</title>
 
     </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav navbar-left" id = "my-navbar-header">
-                    <li><a href="#/">HarvWorks</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" id = "my-navbar-right">
-                    <li><a href="#/#"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#/#portfolio"><i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#/#contact"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="http://linkedin.com/in/harvey-chui" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="http://github.com/HarvWorks" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-        <div ng-view = "" class="container">
-        </div>
+    <body ng-view = "">
     </body>
 </html>

@@ -9,9 +9,10 @@ var sessionUser;
 //                   Index controller                     //
 ////////////////////////////////////////////////////////////
 
-app.controller('indexController', ['$scope', 'factory', '$location', function($scope, factory, $location) {
-    $scope.input = {};
-    $scope.input.name = "";
-    $scope.success = success;
-    success = "";
+app.controller('indexController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll) {
+    $scope.scrollTo = function(id) {
+        $location.hash(id);
+        $anchorScroll();
+        console.log("works!");
+    };
 }]);
