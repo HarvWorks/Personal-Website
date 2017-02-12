@@ -1,0 +1,15 @@
+body{
+    font-size: 2em;
+    align-items: center;
+}
+#my-navbar-header{
+    font-size: 2em !important;
+    margin-top: 10px;
+}
+.container-fluid{
+    padding-left: 0;
+}
+/*#my-navbar-header a{
+    color: #777;
+    text-decoration: none;
+}*/
